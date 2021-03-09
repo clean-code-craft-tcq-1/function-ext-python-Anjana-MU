@@ -34,6 +34,7 @@ def abnormal_attribute_and_limt(ranges,attributeValue):
                break
             message = rangeVal[1] +" | "+valueStringByLang+" : "+attrValAsString
             break
+            
         count+=1
     return message
     
