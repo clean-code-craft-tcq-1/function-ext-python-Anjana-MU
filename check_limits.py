@@ -1,6 +1,5 @@
-
-from report_vitals import report_battery_vitals
-from filter_values import filterOut_safe_vitals             
+from filter_values import filterOut_safe_vitals 
+from report_vitals import report_battery_vitals            
 
 def is_battery_ok(bms_attributes):
     value = dict(filter(filterOut_safe_vitals,bms_attributes.items()))
