@@ -34,7 +34,7 @@ def abnormal_attribute_and_limt(ranges,attributeValue):
     valueStringByLang = Get_Lang_Based_Word("Value",lang,lang_message_list)
     for rangeVal in ranges:
         message = get_message_to_print(rangeVal,valueStringByLang,attributeValue,count)
-        if (count != 2) and not(message is None): #Normal range, so no need to inform user
+        if (count != 2): #Normal range, so no need to inform user
             return message
         count+=1
     return None
