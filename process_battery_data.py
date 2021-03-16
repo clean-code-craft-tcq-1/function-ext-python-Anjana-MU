@@ -17,7 +17,6 @@ def check_vitals(limitRanges,param_value,param_name_english, param_name_by_lang)
     return param_name_english,param_name_by_lang, param_value,limitRanges[4][1],paramdata
 
 def get_data(limitRanges):
-    #lambda x: (param[0] for param in limitRanges) 
     x = []
     for param in limitRanges:
         x.append(param[0])
